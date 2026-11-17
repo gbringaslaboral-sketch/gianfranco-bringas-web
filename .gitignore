@@ -1,0 +1,34 @@
+# --- not published ---
+# research material (incl. a 385 MB video, over GitHub's 100 MB limit), QA captures, internal notes
+raw/*
+!raw/sitio-actual/
+raw/sitio-actual/*
+!raw/sitio-actual/*.html
+qa/
+analisis.md
+.DS_Store
+
+# discarded versions and their sources
+src/v*-*/
+web/web-v*.html
+web/*-v0-original.html
+web/conceptos/
+
+# old site files no page uses anymore
+web/styles.css
+web/script.js
+web/method-variants.js
+web/method-three-city.js
+web/doc-back.js
+web/assets/hero-loop.mp4
+web/assets/hero-poster.jpg
+web/assets/og-image.jpg
+web/assets/gianfranco-auditorio.jpeg
+web/assets/gianfranco-evento.jpeg
+web/assets/gianfranco-exposicion.jpeg
+web/assets/gianfranco-presentacion.jpeg
+web/assets/img/vsl-blur.jpg
+
+# only the font the pages load
+web/assets/fonts/*
+!web/assets/fonts/figtree-400.woff2

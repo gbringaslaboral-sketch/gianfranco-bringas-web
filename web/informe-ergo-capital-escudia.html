@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Informe Escudia ESC-2023-0012 · Caso Ergo Capital · Gianfranco Bringas</title>
+<meta name="description" content="Informe de riesgo económico del caso público Ergo Capital: captación de fondos sin registro regulatorio, US$18 millones comprometidos y más de 200 familias afectadas. Análisis de Gianfranco Bringas, abogado de parte.">
+<link rel="canonical" href="https://gianfrancobringas.com/informe-ergo-capital-escudia">
+<!-- Meta Pixel (conjunto de datos del portafolio Gianfranco Bringas Diaz) -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '905320101996930');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=905320101996930&ev=PageView&noscript=1"></noscript>
+<!-- Fin Meta Pixel -->
+
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/figtree-400.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:"Figtree";src:url(assets/fonts/figtree-400.woff2) format("woff2");font-weight:400 800;font-style:normal;font-display:swap}
+
+/* v6 · "El chat". Scams arrive by WhatsApp, his testimonials ARE WhatsApp videos and he answers by WhatsApp,
+   so the page is the conversation. Colours: the blue binder behind him in every frame of his VSL (#2346a0),
+   the chat wallpaper, and his caption yellow. Header = chat bar, footer = the compose box. */
+:root{
+  --wall:#e6e9ef;--blue:#2346a0;--blue-2:#1b3784;--ink:#0f1420;--muted:#5b6170;--soft:#8a90a0;--line:#d5d9e2;
+  --me:#fff1c9;--y:#f2c46b;--red:#c8372d;--amber:#c77812;--olive:#8a7512;--green:#2f7d4d;
+  --spring:linear(0,.009,.035 2.1%,.141,.281 6.7%,.723 12.9%,.938 16.7%,1.017,1.077,1.121,1.149 24.3%,1.159,1.163,1.161,1.154 29.9%,1.129 32.8%,1.051 39.6%,1.017 43.1%,.991,.977 51%,.974 53.8%,.975 57.1%,.997 69.8%,1.003 76.9%,1);
+  --soft-e:linear(0,.06 2.2%,.24 5%,.7 11.4%,.93 16.3%,1.03 20.9%,1.06 25%,1.04 30.5%,1 40%,.995 50%,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+[hidden]{display:none!important}
+body{background:var(--wall);color:var(--ink);font:400 16.5px/1.5 Figtree,system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:clip;
+  background-image:radial-gradient(rgba(35,70,160,.07) 1px,transparent 1.2px);background-size:22px 22px}
+img,video{display:block;max-width:100%}
+a{color:inherit}
+button,input{font:inherit;color:inherit}
+button{background:none;border:0;cursor:pointer}
+ul,ol{list-style:none}
+.col{width:calc(100% - 24px);max-width:880px;margin-inline:auto}
+.skip{position:absolute;left:-999px}.skip:focus{left:16px;top:16px;z-index:99;background:#fff;padding:8px 12px}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:46px;padding:0 20px;border-radius:999px;background:var(--blue);color:#fff;font-weight:700;font-size:15px;text-decoration:none;white-space:nowrap;transition:transform .5s var(--spring)}
+.btn:active{transform:scale(.93);transition-duration:.1s}
+.btn.y{background:var(--y);color:var(--ink)}
+.btn.ghost{background:#fff;color:var(--blue);box-shadow:inset 0 0 0 1.5px var(--blue)}
+
+/* header = the chat bar: who he is, an honest reply-hours status, and real chat actions */
+.bar{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.95);backdrop-filter:blur(14px) saturate(1.4);-webkit-backdrop-filter:blur(14px) saturate(1.4);box-shadow:0 1px 0 var(--line),0 8px 24px -18px rgba(15,20,32,.35)}
+.bar .col{display:flex;align-items:center;gap:14px;height:72px}
+.me{display:flex;align-items:center;gap:12px;flex:1;min-width:0;text-decoration:none}
+.pic{position:relative;flex:none}
+.pic img{width:46px;height:46px;border-radius:50%;object-fit:cover;object-position:50% 30%}
+.pic i{position:absolute;right:0;bottom:1px;width:13px;height:13px;border-radius:50%;background:#9aa0ad;box-shadow:0 0 0 2.5px #fff;transition:background .3s}
+.bar.open .pic i{background:#25a35a}
+.who{min-width:0;line-height:1.25}
+.who b{display:block;font-size:16.5px;font-weight:750;letter-spacing:-.01em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.who small{display:flex;align-items:center;gap:0;font-size:13px;color:var(--muted);white-space:nowrap;overflow:hidden;min-width:0}
+.who .role{overflow:hidden;text-overflow:ellipsis}
+.who .st{flex:none;transition:color .3s}
+.who .role+.st::before{content:"·";margin:0 7px;color:var(--soft)}
+.bar.open .who .st{color:#1d7f45;font-weight:600}
+.who .st.typing-now{color:var(--blue)!important;font-weight:600}
+.acts{display:flex;align-items:center;gap:4px;flex:none}
+.ic{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;color:var(--blue);text-decoration:none;transition:background .2s,transform .5s var(--spring)}
+.ic:hover{background:#eef1f8}
+.ic:active{transform:scale(.88);transition-duration:.1s}
+.ic svg{width:22px;height:22px}
+.book{margin-left:6px;padding:0 6px 0 18px;gap:10px;min-height:44px}
+.book em{font-style:normal;font-size:13.5px;font-weight:700;background:rgba(255,255,255,.18);border-radius:999px;padding:6px 10px}
+.who .st .s{display:none}
+@media(max-width:640px){.who .role{display:none}.who .role+.st::before{display:none}.who .st .l{display:none}.who .st .s{display:inline}}
+@media(max-width:430px){.bar .col{gap:8px}.acts a.ic{display:none}.ic{width:38px;height:38px}.book{padding:0 16px;font-size:14.5px;margin-left:0}.book em{display:none}.pic img{width:42px;height:42px}.who b{font-size:15.5px}}
+
+/* title above the conversation */
+.title{padding:22px 0 0}
+.title h1{font-size:clamp(31px,7.4vw,62px);font-weight:800;letter-spacing:-.035em;line-height:1.02}
+.title mark{background:linear-gradient(transparent 58%,var(--y) 58%,var(--y) 92%,transparent 92%);color:inherit;padding:0 .04em}
+.title p{margin-top:8px;color:var(--muted);font-size:16.5px;max-width:580px}
+@media(min-width:900px){.title{padding-top:40px}}
+
+/* chat */
+.chat{padding:4px 0 30px;display:flex;flex-direction:column;gap:6px}
+.day{align-self:center;background:#fff;color:var(--muted);font-size:12.5px;font-weight:600;padding:4px 12px;border-radius:8px;margin:8px 0 2px;box-shadow:0 1px 0 var(--line)}
+.sys{align-self:center;text-align:center;background:#fdf1cf;color:#6b5414;font-size:13px;font-weight:600;padding:6px 14px;border-radius:10px;margin:6px 0}
+.msg{display:flex;gap:10px;align-items:flex-end;max-width:min(640px,94%);opacity:0;transform:translateY(14px) scale(.97);transform-origin:bottom left;transition:opacity .35s,transform .6s var(--spring)}
+.msg.in{opacity:1;transform:none}
+.msg+.msg{margin-top:-2px}
+.av{width:34px;height:34px;border-radius:50%;flex:none;object-fit:cover;background:#c3c9d6;display:grid;place-items:center;font-weight:800;color:#fff;font-size:15px}
+.av.ghost{visibility:hidden}
+.b{min-width:0;max-width:100%;background:#fff;border-radius:18px 18px 18px 6px;padding:9px 14px 7px;box-shadow:0 1px 0 rgba(0,0,0,.08);font-size:clamp(16px,1.9vw,18.5px);line-height:1.4}
+.b .name{display:block;font-size:12.5px;font-weight:700;margin-bottom:2px}
+.b time{display:block;text-align:right;font-size:11px;color:var(--muted);margin-top:3px}
+.them .name{color:#b2452f}
+.them .b time{display:inline;margin-left:10px;float:right;margin-top:6px}
+.g .b{background:var(--blue);color:#fff}
+.g .b .name{color:var(--y)}
+.g .b time{color:rgba(255,255,255,.6)}
+.g .b mark{background:none;color:var(--y);font-weight:800}
+.g .b a{color:#fff}
+.big{font-size:clamp(21px,2.9vw,30px);font-weight:800;letter-spacing:-.02em;line-height:1.15}
+.you{align-self:flex-end;transform-origin:bottom right}
+.you .b{background:var(--me);border-radius:18px 18px 6px 18px}
+.you .b time{color:#8b7a4b}
+.wide{width:100%}
+.wide .b{flex:1}
+@media(min-width:900px){.av{width:42px;height:42px}}
+
+/* video bubble = the VSL */
+.vid{padding:5px;flex:1}
+.vframe{position:relative;border-radius:14px;overflow:hidden;aspect-ratio:16/9;background:#000;width:100%}
+.vframe img,.vframe video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.vframe video{object-fit:contain}
+.vframe .p{position:absolute;inset:0;display:grid;place-items:center;background:linear-gradient(transparent 50%,rgba(0,0,0,.5))}
+.vframe .p span{width:74px;height:74px;border-radius:50%;background:rgba(255,255,255,.96);display:grid;place-items:center;transition:transform .5s var(--spring)}
+.vframe .p:active span{transform:scale(.9)}
+.vframe .p svg{width:26px;height:26px;margin-left:4px;fill:var(--blue)}
+.vframe .len{position:absolute;left:12px;bottom:10px;color:#fff;font-size:13px;font-weight:700;pointer-events:none}
+.vframe.on .p,.vframe.on .len,.vframe.on img{display:none}
+.vid .cap{display:flex;justify-content:space-between;gap:10px;padding:8px 10px 4px;font-size:15.5px}
+.vid .cap time{margin:0}
+
+/* poll (WhatsApp-style) */
+.poll .q{font-weight:800;font-size:clamp(18px,2.2vw,22px);letter-spacing:-.015em;line-height:1.25}
+.poll .hint{font-size:13px;opacity:.75;margin:2px 0 10px}
+.opt{display:grid;grid-template-columns:24px 1fr;gap:10px;align-items:start;width:100%;text-align:left;padding:10px 4px;border-top:1px solid rgba(255,255,255,.16);font-size:clamp(15.5px,1.8vw,17px);line-height:1.35;transition:background .2s}
+.opt:first-of-type{border-top:0}
+.opt .ck{width:22px;height:22px;border-radius:50%;box-shadow:inset 0 0 0 2px rgba(255,255,255,.7);display:grid;place-items:center;transition:background .2s,transform .5s var(--spring),box-shadow .2s}
+.opt .ck svg{width:13px;height:13px;opacity:0;transition:opacity .2s}
+.opt[aria-pressed=true] .ck,.opt[aria-checked=true] .ck{background:var(--y);box-shadow:none;animation:pop .5s var(--spring)}
+.opt[aria-pressed=true] .ck svg,.opt[aria-checked=true] .ck svg{opacity:1}
+.opt:active .ck{transform:scale(.85)}
+.poll-foot{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:8px;padding-top:8px;border-top:1px solid rgba(255,255,255,.16);font-size:13.5px}
+.poll-foot .lights{display:flex;gap:5px}
+.poll-foot .lights i{width:12px;height:12px;border-radius:50%;background:rgba(255,255,255,.18);transition:background .3s,transform .5s var(--spring)}
+.poll-foot .lights i.on{background:#ff6b5a;transform:scale(1.15)}
+@keyframes pop{0%{transform:scale(.6)}100%{transform:scale(1)}}
+
+/* list message: 3 layers */
+.layers{margin-top:8px;display:grid;gap:7px}
+.layers div{background:rgba(255,255,255,.1);border-radius:12px;padding:10px 12px}
+.layers b{display:block;font-size:17.5px;letter-spacing:-.01em}
+.layers small{opacity:.78;font-size:14.5px;line-height:1.4;display:block;margin-top:2px}
+
+/* pdf attachment */
+.pdf{display:flex;gap:12px;align-items:center;text-decoration:none;background:rgba(255,255,255,.12);border-radius:12px;padding:10px 12px;margin:6px 0 4px;transition:background .2s}
+.pdf:hover{background:rgba(255,255,255,.2)}
+.pdf i{width:40px;height:48px;border-radius:6px;background:#fff;color:var(--red);display:grid;place-items:center;font-style:normal;font-weight:800;font-size:11px;flex:none}
+.pdf b{display:block;font-size:15.5px}.pdf small{font-size:12.5px;opacity:.78}
+.map{margin-top:8px;background:#fff;color:var(--ink);border-radius:12px;padding:10px 12px;font-size:13.5px}
+.map li{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:7px 0;border-bottom:1px solid #eceef3}
+.map li:last-child{border-bottom:0}
+.lvl{display:inline-flex;align-items:center;gap:5px;font-size:10.5px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;padding:4px 8px;border-radius:999px;white-space:nowrap;color:var(--c);background:color-mix(in srgb,var(--c) 12%,#fff)}
+.lvl::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--c)}
+.l-red{--c:var(--red)}.l-amber{--c:var(--amber)}.l-olive{--c:var(--olive)}.l-green{--c:var(--green)}
+.map .score{display:flex;align-items:center;gap:10px;margin-top:6px;padding:8px 10px;border-radius:10px;background:#fbe6e3;color:var(--red);font-weight:800}
+.map .score span{font-size:28px;letter-spacing:-.03em}
+
+/* forwarded = cases */
+.fwd{font-size:12.5px;font-style:italic;color:var(--muted);display:flex;align-items:center;gap:5px;margin-bottom:4px}
+.case .amt{font-size:clamp(24px,3vw,30px);font-weight:800;letter-spacing:-.03em;line-height:1.05}
+.case .amt small{font-size:13.5px;font-weight:600;letter-spacing:0;color:var(--muted);margin-left:6px}
+.case .k{font-size:13.5px;color:var(--muted);font-weight:600;margin-bottom:6px}
+.case .hr{display:grid;gap:6px;margin-top:8px;font-size:15.5px}
+.case .hr p{display:grid;grid-template-columns:auto 1fr;gap:8px;align-items:start}
+.case .hr .lvl{margin-top:2px}
+.case .code{font-size:11.5px;color:var(--soft);font-weight:700;margin-top:6px}
+
+/* video notes = testimonials */
+.notes{display:grid;grid-auto-flow:column;grid-auto-columns:118px;gap:8px;overflow-x:auto;padding:6px 2px 4px;scrollbar-width:none;margin-top:4px}
+.notes::-webkit-scrollbar{display:none}
+.note{position:relative;aspect-ratio:9/16;border-radius:14px;overflow:hidden;background:#222;transition:transform .5s var(--spring)}
+.note:active{transform:scale(.95);transition-duration:.1s}
+.note img{width:100%;height:100%;object-fit:cover}
+.note span{position:absolute;left:6px;bottom:6px;background:rgba(0,0,0,.6);color:#fff;font-size:11.5px;font-weight:700;border-radius:999px;padding:3px 8px}
+@media(min-width:900px){.notes{grid-auto-columns:1fr;grid-auto-flow:row;grid-template-columns:repeat(5,1fr);overflow:visible}}
+
+/* photo message = about */
+.photo{padding:4px;flex:1}
+.photo img{border-radius:14px;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;object-position:50% 40%}
+.photo .cap{padding:8px 10px 2px}
+.books{display:grid;gap:6px;margin-top:8px}
+.books a{display:flex;justify-content:space-between;gap:10px;background:rgba(255,255,255,.1);border-radius:10px;padding:9px 12px;font-size:14.5px;text-decoration:none}
+.books a:hover{background:rgba(255,255,255,.18)}
+.books b{color:var(--y)}
+
+/* quick replies */
+.qr{display:flex;flex-wrap:wrap;gap:8px;margin:4px 0 4px 44px}
+@media(min-width:900px){.qr{margin-left:52px}}
+
+/* faq inside a bubble */
+.faqb .ftabs{display:flex;gap:6px;overflow-x:auto;margin:8px 0;scrollbar-width:none}
+.faqb .ftabs::-webkit-scrollbar{display:none}
+.ftab{white-space:nowrap;font-size:13.5px;font-weight:700;padding:8px 13px;border-radius:999px;background:rgba(255,255,255,.12);transition:background .2s,color .2s,transform .5s var(--spring)}
+.ftab:active{transform:scale(.94)}
+.ftab.is-on{background:#fff;color:var(--blue)}
+.ftab small{opacity:.6;margin-left:4px}
+.fgroup>p{font-size:12.5px;opacity:.7;padding:4px 0}
+.fgroup details{border-top:1px solid rgba(255,255,255,.16)}
+.fgroup summary{list-style:none;display:flex;justify-content:space-between;gap:14px;padding:12px 0;cursor:pointer;font-weight:700;font-size:16px;line-height:1.35}
+.fgroup summary::-webkit-details-marker{display:none}
+.fgroup summary::after{content:"+";flex:none;width:24px;height:24px;border-radius:50%;background:rgba(255,255,255,.14);display:grid;place-items:center;line-height:24px;text-align:center;font-weight:700;transition:transform .5s var(--spring),background .2s}
+.fgroup details[open] summary::after{transform:rotate(45deg);background:var(--y);color:var(--ink)}
+.fgroup details p{font-size:15px;opacity:.88;padding-bottom:10px}
+
+/* typing */
+.typing{display:inline-flex;gap:4px;padding:14px 16px}
+.typing i{width:7px;height:7px;border-radius:50%;background:#9aa0ad;animation:t 1s infinite}
+.typing i:nth-child(2){animation-delay:.15s}.typing i:nth-child(3){animation-delay:.3s}
+@keyframes t{50%{transform:translateY(-4px);opacity:.5}}
+
+/* legal line under the chat */
+.legal{padding:8px 0 150px;display:flex;flex-wrap:wrap;justify-content:center;gap:6px 16px;font-size:12.5px;color:var(--muted);text-align:center}
+.legal a{text-decoration:none}.legal a:hover{color:var(--blue)}
+
+/* footer = the compose box */
+.compose{position:fixed;left:0;right:0;bottom:0;z-index:30;background:rgba(230,233,239,.95);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-top:1px solid var(--line);padding:8px 0 calc(8px + env(safe-area-inset-bottom));transform:translateY(110%);transition:transform .6s var(--soft-e)}
+.compose.on{transform:none}
+.compose .chips{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;margin-bottom:6px;font-size:12.5px}
+.compose .chips:empty{display:none}
+.compose .chips span{flex:none;background:#fff;border-radius:999px;padding:4px 10px;font-weight:600;color:var(--blue)}
+.compose form{display:flex;gap:8px;align-items:center}
+.compose input{flex:1;min-width:0;min-height:50px;border-radius:999px;border:0;background:#fff;padding:0 18px;font-size:16px;outline:none;box-shadow:0 1px 0 rgba(0,0,0,.08)}
+.compose input:focus{box-shadow:0 0 0 2px var(--blue)}
+.compose .send{width:50px;height:50px;border-radius:50%;background:var(--blue);display:grid;place-items:center;flex:none;transition:transform .5s var(--spring)}
+.compose .send:active{transform:scale(.88)}
+.compose svg{width:20px;height:20px;fill:#fff}
+.compose p{font-size:11.5px;color:var(--muted);margin-top:5px;text-align:center}
+
+/* dialogs */
+dialog{border:0;padding:0;background:transparent;max-width:none;max-height:none}
+dialog::backdrop{background:rgba(15,20,32,.75);backdrop-filter:blur(4px)}
+.dlg{background:#fff;border-radius:20px;overflow:hidden;width:min(760px,calc(100vw - 24px));height:min(780px,calc(100dvh - 40px));display:flex;flex-direction:column}
+.dlg-h{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:14px 18px;border-bottom:1px solid var(--line);font-weight:800;font-size:17px}
+.dlg-h a{font-weight:500;font-size:13px;color:var(--muted)}
+.dlg iframe{flex:1;width:100%;border:0}
+.x{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:var(--wall);font-size:16px;color:var(--ink);flex:none}
+.vdlg{width:min(400px,calc(100vw - 32px));aspect-ratio:9/16;max-height:calc(100dvh - 40px);background:#000;border-radius:20px;overflow:hidden;position:relative}
+.vdlg wistia-player{width:100%;height:100%;display:block}
+.vdlg .x{position:absolute;right:10px;top:10px;z-index:3}
+
+.static .msg{opacity:1!important;transform:none!important;transition:none!important}
+.static .compose{transform:none}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.msg{opacity:1;transform:none}.compose{transform:none}}
+
+/* desktop: a wide conversation, not a phone column */
+@media(min-width:1100px){.col{max-width:1040px}.msg{max-width:min(780px,94%)}.msg.wide{max-width:100%}.b{font-size:19px}.title h1{font-size:64px}.vframe .p span{width:88px;height:88px}}
+.photo img{max-height:440px}
+
+/* sections: inline links on wide screens, a ⋮ menu (like WhatsApp) everywhere else */
+.links{display:none;align-items:center;gap:2px;flex:none}
+.links a{font-size:14.5px;font-weight:600;color:var(--muted);text-decoration:none;padding:8px 11px;border-radius:999px;transition:background .2s,color .2s}
+.links a:hover,.links a.on{background:#eef1f8;color:var(--blue)}
+.bar .col{position:relative}
+.menu{position:absolute;right:0;top:calc(100% + 6px);min-width:240px;background:#fff;border-radius:16px;padding:6px;box-shadow:0 1px 0 var(--line),0 24px 50px -16px rgba(15,20,32,.35);transform-origin:top right;animation:menuIn .35s var(--spring)}
+.menu a{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:11px 14px;border-radius:10px;font-size:15.5px;font-weight:600;text-decoration:none;color:var(--ink)}
+.menu a:hover,.menu a:focus-visible{background:#eef1f8;color:var(--blue);outline:none}
+.menu small{font-size:12.5px;color:var(--soft);font-weight:600}
+@keyframes menuIn{from{opacity:0;transform:scale(.92) translateY(-6px)}to{opacity:1;transform:none}}
+@media(min-width:1180px){.links{display:flex}.more{display:none}.who .role{display:none}.who .role+.st::before{display:none}}
+/* the message you jumped to lights up for a moment */
+.msg.flash>.b{animation:flash 1.4s ease}
+@keyframes flash{0%,100%{box-shadow:0 1px 0 rgba(0,0,0,.08)}25%{box-shadow:0 0 0 4px var(--y),0 1px 0 rgba(0,0,0,.08)}}
+html{scroll-padding-top:90px}
+@media(max-width:820px){.who .role{display:none}.who .role+.st::before{display:none}}
+@media(max-width:430px){.acts [data-play-vsl]{display:none}}
+/* buttons inside bubbles keep their own colours (white bubble links would vanish) */
+.b .btn.y{color:var(--ink)!important}
+.b .btn.ghost{color:var(--blue)!important;background:#fff}
+
+/* docs: a file opened from the chat (informe, privacidad) and a shared link (cobertura) */
+.docp .bar .col{gap:6px}
+.back{margin-left:-8px}
+.sheet{background:#fff;border-radius:18px;margin:18px 0 0;padding:24px 18px 28px;box-shadow:0 1px 0 var(--line),0 30px 60px -40px rgba(15,20,32,.35);font-size:16.5px;line-height:1.6}
+@media(min-width:900px){.sheet{padding:48px 56px 52px;margin-top:28px}}
+.file{display:flex;align-items:center;gap:12px;padding:12px 14px;border-radius:14px;background:#f3f5f9;margin-bottom:22px}
+.file i{width:38px;height:46px;border-radius:6px;background:#fff;color:var(--red);display:grid;place-items:center;font-style:normal;font-weight:800;font-size:11px;flex:none;box-shadow:0 0 0 1px var(--line)}
+.file b{display:block;font-size:15px}
+.file small{font-size:12.5px;color:var(--muted)}
+.sheet h1{font-size:clamp(30px,5.4vw,50px);font-weight:800;letter-spacing:-.035em;line-height:1.04}
+.sheet .sub{color:var(--muted);margin-top:10px;font-size:17px}
+.sheet h2{font-size:clamp(21px,2.6vw,27px);font-weight:800;letter-spacing:-.02em;line-height:1.15;margin:34px 0 10px;display:flex;gap:10px;align-items:baseline}
+.sheet h2 .n{font-size:13px;font-weight:800;color:var(--blue);background:#eef1f8;border-radius:999px;padding:4px 9px;flex:none;letter-spacing:.02em}
+.sheet h3{font-size:19px;font-weight:800;letter-spacing:-.015em;margin:0 0 8px}
+.sheet h4{font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--soft);margin:14px 0 4px}
+.sheet p+p{margin-top:10px}
+.sheet ul.dots{display:grid;gap:8px;margin-top:6px}
+.sheet ul.dots li{display:grid;grid-template-columns:16px 1fr;gap:8px}
+.sheet ul.dots li::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--blue);margin-top:.65em}
+.sheet a{color:var(--blue);text-decoration-thickness:1.5px;text-underline-offset:3px}
+.alert{display:inline-flex;align-items:center;gap:8px;margin:14px 0 4px;padding:7px 12px;border-radius:999px;background:#fbe6e3;color:var(--red);font-weight:800;font-size:13px}
+.alert::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--red)}
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:#eceef3;border-radius:14px;overflow:hidden;margin-top:20px}
+.facts>div{background:#f8f9fb;padding:12px 14px}
+.facts dt{font-size:11.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--soft)}
+.facts dd{font-weight:700;font-size:15.5px;margin-top:2px}
+@media(min-width:760px){.facts.four{grid-template-columns:repeat(4,1fr)}.facts.three{grid-template-columns:repeat(3,1fr)}}
+.capital{margin-top:16px;padding:18px;border-radius:14px;background:var(--ink);color:#fff}
+.capital small{font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--y)}
+.capital b{display:block;font-size:clamp(34px,6vw,52px);font-weight:800;letter-spacing:-.04em;line-height:1.05;margin:4px 0}
+.capital p{color:rgba(255,255,255,.75);font-size:15px}
+.risks{margin-top:8px;border-top:1px solid #eceef3}
+.risks li{display:grid;grid-template-columns:1fr auto;gap:4px 12px;padding:14px 0;border-bottom:1px solid #eceef3}
+.risks li b{font-weight:700;font-size:16px}
+.risks li p{grid-column:1/-1;color:var(--muted);font-size:15px;line-height:1.5;margin:0!important}
+.legend{display:flex;flex-wrap:wrap;gap:8px 14px;margin-top:12px;font-size:13px;color:var(--muted)}
+.score{display:grid;grid-template-columns:auto 1fr;gap:16px;align-items:center;margin-top:18px;padding:18px;border-radius:14px;background:#fbe6e3}
+.score .s{font-size:56px;font-weight:800;letter-spacing:-.05em;line-height:.9;color:var(--red)}
+.score .s small{font-size:18px;color:var(--muted);letter-spacing:0}
+.score b{color:var(--red);font-size:17px}
+.score p{font-size:14.5px;margin-top:4px!important}
+.score .scale{grid-column:1/-1;font-size:12.5px;color:var(--muted);margin:0!important}
+.rc{border:1px solid #eceef3;border-radius:16px;padding:18px;margin-top:12px}
+.rc .tag{display:inline-block;font-size:12px;font-weight:800;color:var(--red);background:#fbe6e3;border-radius:999px;padding:4px 9px;margin-bottom:8px}
+.rc .grid2{display:grid;gap:4px 24px}
+@media(min-width:760px){.rc .grid2{grid-template-columns:1fr 1fr}}
+.rc .now{margin-top:12px!important;padding:10px 12px;border-radius:12px;background:#fdf1cf;color:#5a4610;font-size:15px}
+.rc .now b{display:block;font-size:12px;letter-spacing:.06em;text-transform:uppercase}
+.quote{margin:14px 0;font-size:clamp(24px,3.6vw,34px);font-weight:800;letter-spacing:-.03em;line-height:1.15}
+.quote mark{background:linear-gradient(transparent 58%,var(--y) 58%,var(--y) 92%,transparent 92%);color:inherit}
+.signer{display:flex;align-items:center;gap:12px;margin-top:22px;padding-top:18px;border-top:1px solid #eceef3}
+.signer img{width:48px;height:48px;border-radius:50%;object-fit:cover}
+.signer b{display:block}
+.signer small{color:var(--muted);font-size:13.5px;display:block;line-height:1.4}
+.end-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.sheet .end-row a.btn{color:#fff;text-decoration:none}
+.sheet .end-row a.btn.ghost{color:var(--blue)}
+.sheet .end-row a.btn.y{color:var(--ink)}
+/* shared link preview (cobertura) */
+.linkp{display:block;text-decoration:none;color:var(--ink)!important;background:#fff;border-radius:14px;overflow:hidden;margin:4px 0 6px}
+.linkp .lp-top{background:#f3f5f9;padding:14px;border-left:4px solid var(--red)}
+.linkp .dom{font-size:12.5px;color:var(--muted);font-weight:600}
+.linkp b{display:block;font-size:18px;margin:2px 0}
+.linkp p{font-size:14.5px;color:var(--muted);line-height:1.45}
+.linkp .lp-url{padding:9px 14px;font-size:13px;color:var(--blue);font-weight:700}
+.docp .legal{padding-bottom:40px}
+@media(max-width:430px){.docp .hm{display:none}.docp .book{padding:0 16px}}
+.linkp .lp-top,.linkp .lp-url,.linkp .dom{display:block}
+.alert::before{background:currentColor}
+.sheet ul.dots+p{margin-top:12px}
+
+</style>
+</head>
+<body class="docp">
+<a class="skip" href="#contenido">Saltar al informe</a>
+<header class="bar">
+  <div class="col">
+    <a class="back ic" href="index.html" data-back aria-label="Volver a la web"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    <a class="me" href="index.html" aria-label="Gianfranco Bringas, volver a la web"><span class="pic"><img src="assets/img/gianfranco-cara.jpg" alt="" width="46" height="46"><i aria-hidden="true"></i></span>
+      <span class="who"><b>Gianfranco Bringas</b><small><span class="role">Informe ESC-2023-0012 · caso público</span><span class="st" id="st" aria-live="polite">responde de 8 a. m. a 10 p. m.</span></small></span></a>
+    <nav class="acts" aria-label="Acciones">
+      <a class="ic" href="tel:+51992878215" aria-label="Llamar al +51 992 878 215" title="Llamar"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 3.8h2.6l1.4 3.6-1.8 1.2a11 11 0 0 0 6.6 6.6l1.2-1.8 3.6 1.4v2.6a1.8 1.8 0 0 1-1.9 1.8A15.8 15.8 0 0 1 4.8 5.7a1.8 1.8 0 0 1 1.8-1.9z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></a>
+      <a class="btn book" href="index.html#precio"><span>Revisar<span class="hm"> mi caso</span></span></a>
+    </nav>
+  </div>
+</header>
+
+<main class="col" id="contenido">
+  <article class="sheet">
+    <div class="file"><i>PDF</i><span><b>Informe Escudia · ESC-2023-0012</b><small>Sistema de Diagnóstico de Riesgos Económicos · caso público · proceso judicial en curso</small></span></div>
+    <h1>Informe de riesgo económico: captación de fondos de inversión</h1>
+    <p class="sub">Cuenta auditada sin verificación independiente · Sin registro ante regulador · Proceso penal en curso</p>
+    <p class="alert">Riesgo crítico: captación sin registro regulatorio</p>
+
+    <dl class="facts four">
+      <div><dt>Informe N.°</dt><dd>ESC-2023-0012</dd></div>
+      <div><dt>Analista</dt><dd>Gianfranco Bringas</dd></div>
+      <div><dt>Rol</dt><dd>Abogado de parte en el proceso</dd></div>
+      <div><dt>Estado</dt><dd>Proceso judicial activo</dd></div>
+    </dl>
+    <div class="capital"><small>Capital comprometido en el proceso</small><b>USD 18,000,000</b><p>Más de 200 familias afectadas. Proceso de recuperación en curso por vía penal.</p></div>
+
+    <h2><span class="n">01</span>Resumen ejecutivo</h2>
+    <p>Más de 200 familias entregaron capital a una estructura de captación de fondos que ofrecía acceso a una cuenta de inversión auditada, radicada en Miami, sin registro ante ningún regulador financiero. El responsable señalado, con visibilidad pública previa, operó principalmente a través de una red de referidos. Gianfranco Bringas participa como abogado de parte en la denuncia penal por captación ilegal de fondos actualmente en curso.</p>
+
+    <h2><span class="n">02</span>Datos del caso</h2>
+    <dl class="facts three">
+      <div><dt>Estructura señalada</dt><dd>Ergo Capital</dd></div>
+      <div><dt>Tipo de operación</dt><dd>Captación de fondos vía cuenta de inversión en el extranjero</dd></div>
+      <div><dt>Capital comprometido</dt><dd>USD 18,000,000</dd></div>
+      <div><dt>Afectados</dt><dd>200+ familias</dd></div>
+      <div><dt>Ubicación de la cuenta</dt><dd>Miami, EE.UU.</dd></div>
+      <div><dt>Estado</dt><dd>Denuncia penal por captación ilegal financiera, proceso en curso</dd></div>
+    </dl>
+
+    <h2><span class="n">03</span>Mapa de riesgos · semáforo</h2>
+    <ol class="risks">
+      <li><b>1. Registro ante regulador financiero</b><span class="lvl l-red">Crítico</span><p>La estructura de captación operó sin registro ante ningún organismo regulador competente para captar fondos del público de forma masiva.</p></li>
+      <li><b>2. Verificación independiente de la cuenta auditada</b><span class="lvl l-red">Crítico</span><p>Se mostraba una cuenta "auditada" en Miami, pero ninguno de los inversionistas verificó esa auditoría de forma independiente antes de transferir capital.</p></li>
+      <li><b>3. Ejecutabilidad de las garantías ofrecidas</b><span class="lvl l-red">Crítico</span><p>Las garantías presentadas a los inversionistas resultaron, en la práctica, casi imposibles de ejecutar ante el incumplimiento.</p></li>
+      <li><b>4. Verificación del historial real del responsable</b><span class="lvl l-amber">Alto</span><p>El responsable señalado ya contaba con visibilidad pública previa, usada como respaldo de confianza, sin que existiera verificación independiente de su historial financiero.</p></li>
+      <li><b>5. Trazabilidad del flujo de capital</b><span class="lvl l-amber">Alto</span><p>El movimiento de fondos entre Perú y la cuenta en Miami involucra múltiples jurisdicciones, lo que complica la trazabilidad y la vía de recuperación.</p></li>
+      <li><b>6. Mecanismo de captación por referidos</b><span class="lvl l-amber">Alto</span><p>Gran parte del crecimiento de la estructura se dio a través de referidos: inversionistas que confiaron en la recomendación de conocidos, no en verificación propia.</p></li>
+      <li><b>7. Marco regulatorio aplicable en jurisdicción cruzada</b><span class="lvl l-olive">Medio</span><p>La operación cruza jurisdicciones (Perú / EE.UU.), lo que exige coordinación legal en más de un sistema regulatorio para la vía de recuperación.</p></li>
+      <li><b>8. Identificación y coordinación de afectados</b><span class="lvl l-green">Bajo</span><p>Los afectados están identificados y coordinados procesalmente como parte conjunta en la denuncia penal actualmente en curso.</p></li>
+    </ol>
+    <div class="legend"><span><span class="lvl l-red">Crítico</span> Riesgo de pérdida total.</span><span><span class="lvl l-amber">Alto</span> Pérdida parcial significativa.</span><span><span class="lvl l-olive">Medio</span> Riesgo controlable.</span><span><span class="lvl l-green">Bajo</span> Riesgo menor.</span></div>
+    <div class="score"><span class="s">89<small>/100</small></span><div><b>Riesgo crítico</b><p>Uno de los niveles más altos registrados en el sistema por escala y ausencia total de registro regulatorio.</p></div>
+      <p class="scale">El puntaje refleja la severidad del riesgo total con base en las 8 variables analizadas, ponderando el nivel asignado a cada variable según su peso relativo en la operación. Escala: 0–25 Bajo · 26–50 Medio · 51–70 Alto · 71–89 Crítico · 90–100 Extremo.</p></div>
+
+    <h2><span class="n">04</span>Riesgos críticos del caso</h2>
+    <section class="rc"><span class="tag">RC-1</span><h3>Captación de fondos sin registro regulatorio</h3>
+      <div class="grid2"><div><h4>Fundamento del análisis</h4><p>Ningún ente regulador autorizó la captación masiva de fondos del público bajo esta estructura. Esa ausencia es, por sí sola, la señal más clara y más ignorada por los inversionistas.</p></div>
+      <div><h4>Cómo se hubiera detectado</h4><p>Una consulta al registro del regulador financiero correspondiente, antes de transferir el primer dólar, habría mostrado la ausencia de autorización para operar como captador de fondos del público.</p></div></div>
+      <p class="now"><b>Estado actual · RC-1</b>Esta ausencia de registro es hoy uno de los ejes centrales de la denuncia penal por captación ilegal financiera en curso.</p></section>
+    <section class="rc"><span class="tag">RC-2</span><h3>Cuenta auditada nunca verificada de forma independiente</h3>
+      <div class="grid2"><div><h4>Fundamento del análisis</h4><p>Mostrar una cuenta "auditada" no es lo mismo que permitir que un tercero independiente verifique esa auditoría. Ningún inversionista solicitó esa verificación antes de transferir capital.</p></div>
+      <div><h4>La confusión central</h4><p>Una auditoría que solo el propio administrador presenta, sin acceso de terceros a los estados de cuenta reales, no es evidencia independiente: es una afirmación no verificada.</p></div></div>
+      <p class="now"><b>Estado actual · RC-2</b>La verificación independiente de los movimientos reales de la cuenta en Miami es parte de la investigación en curso.</p></section>
+    <section class="rc"><span class="tag">RC-3</span><h3>Garantías ofrecidas casi imposibles de ejecutar</h3>
+      <div class="grid2"><div><h4>Fundamento del análisis</h4><p>Las garantías presentadas a los inversionistas no tenían un mecanismo real y accesible de ejecución en caso de incumplimiento, un elemento que rara vez se evalúa antes de invertir.</p></div>
+      <div><h4>Impacto para los afectados</h4><p>Sin garantía ejecutable, la única vía de recuperación real termina siendo el proceso judicial: más largo, más costoso y con resultado incierto.</p></div></div>
+      <p class="now"><b>Estado actual · RC-3</b>La vía penal, activa actualmente, es hoy el mecanismo formal que busca compensar la ausencia de una garantía civil ejecutable.</p></section>
+
+    <h2><span class="n">05</span>Posición del analista</h2>
+    <p class="alert" style="background:#e3f3e8;color:var(--green)">Caso en proceso · rol de parte activa en la denuncia</p>
+    <p class="quote">No vieron la empresa. Vieron a la persona. <mark>El personaje.</mark></p>
+    <p>Las tres alertas críticas de este informe (sin registro, sin verificación independiente, sin garantía ejecutable) son señales que un análisis de riesgo detecta antes de transferir un dólar. En este caso, ninguna de las tres se revisó a tiempo.</p>
+    <p>Hoy, como abogado de parte en el proceso, el trabajo es distinto: no prevenir la pérdida, sino sostener el camino legal disponible para la recuperación del capital comprometido.</p>
+    <div class="signer"><img src="assets/img/gianfranco-cara.jpg" alt="" width="48" height="48"><span><b>Gianfranco Bringas</b><small>Abogado · Analista de Riesgo Económico · Colegiado CAL<br>Parte activa en el proceso judicial de este caso · proceso en curso</small></span></div>
+
+    <div class="end-row"><a class="btn y" href="index.html#precio">Revisar mi caso antes de pagar</a><a class="btn ghost" href="cobertura-ergo-capital.html">Ver cobertura pública</a></div>
+  </article>
+  <p class="legal"><span>Caso público · información basada en el proceso judicial en curso</span><a href="index.html">← Volver a la web</a><a href="privacidad.html">Privacidad</a></p>
+</main>
+
+<script>
+(() => {
+  const qs = new URLSearchParams(location.search);
+  if (qs.has('static')) document.documentElement.classList.add('static');
+  const $ = (s, r = document) => r.querySelector(s);
+  const $$ = (s, r = document) => [...r.querySelectorAll(s)];
+  const track = (...a) => { if (typeof window.fbq === 'function') window.fbq(...a); };
+
+  /* honest status from his real hours (Lima) */
+  const bar = $('.bar'), st = $('#st');
+  const h = +new Date().toLocaleString('en-US', { timeZone: 'America/Lima', hour: 'numeric', hour12: false }) % 24;
+  const open = h >= 8 && h < 22;
+  bar.classList.toggle('open', open);
+  if (st) st.innerHTML = open ? '<span class="l">responde hoy hasta las 10 p. m.</span><span class="s">responde hasta 10 p. m.</span>'
+                              : '<span class="l">responde desde las 8 a. m.</span><span class="s">responde desde 8 a. m.</span>';
+
+  /* ← back: if you came from the site, go back in history (keeps your place); otherwise open the home */
+  let fromSite = false;
+  try { fromSite = new URL(document.referrer).origin === location.origin; } catch {}
+  $$('[data-back]').forEach(a => a.addEventListener('click', e => {
+    if (!fromSite || history.length < 2) return;
+    e.preventDefault(); history.back();
+  }));
+
+  /* Meta Pixel: WhatsApp or phone link = Contact (same as the previous site) */
+  document.addEventListener('click', e => { if (e.target.closest?.('a[href*="wa.me/"], a[href^="tel:"]')) track('track', 'Contact'); }, true);
+})();
+
+</script>
+</body>
+</html>
