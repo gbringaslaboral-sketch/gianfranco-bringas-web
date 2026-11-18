@@ -69,7 +69,7 @@
     const caso = (f.caso.value || '').trim();
     const mom = moms.find(b => b.getAttribute('aria-checked') === 'true')?.dataset.mom;
     const marked = sigs.filter(b => b.getAttribute('aria-pressed') === 'true').map(b => b.dataset.sig);
-    let txt = 'Hola Gianfranco, quiero revisar mi caso con Escudia.';
+    let txt = 'Hola, quiero saber qué hacer en mi caso.';
     if (mom) txt += `\nMomento: ${mom}.`;
     if (marked.length) txt += `\nTácticas que reconozco (${marked.length} de 6):\n` + marked.map(m => `● ${m}`).join('\n');
     if (caso) txt += `\nLo que pasó: ${caso}`;
